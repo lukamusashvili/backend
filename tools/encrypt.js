@@ -6,7 +6,6 @@ async function hashPassword(password) {
 }
 
 async function validatePassword(password, hashedPassword) {
-    console.log(password, hashedPassword);
     if (!password || !hashedPassword) {
         return false;
     }

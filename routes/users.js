@@ -87,8 +87,6 @@ router
         }
         if (data.file_title) {
             const file = await getFile(data.file_title);
-            console.log("file");
-            console.log(file);
             if (!file) {
                 ctx.status = 404;
                 ctx.body = "File not found";
